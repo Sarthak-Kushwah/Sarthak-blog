@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+    <h2 class="text-center">Signup</h2>
+
+    <form method="POST">
+
+        <input type="text" name="username" class="form-control mb-3" placeholder="Username">
+
+        <input type="email" name="email" class="form-control mb-3" placeholder="Email">
+
+        <input type="password" name="password" class="form-control mb-3" placeholder="Password">
+
+        <input type="password" name="confirm_password" class="form-control mb-3" placeholder="Confirm Password">
+
+        <button class="btn btn-primary w-100">Signup</button>
+    </form>
+</div>
+
+{% endblock %}

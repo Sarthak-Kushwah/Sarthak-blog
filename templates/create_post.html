@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-8 offset-md-2">
+    <h2>Create Post</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <input type="text" name="title" class="form-control mb-3" placeholder="Post Title">
+
+        <textarea name="content" class="form-control mb-3" rows="5" placeholder="Write content..."></textarea>
+
+        <input type="file" name="image" class="form-control mb-3">
+
+        <button class="btn btn-success">Publish</button>
+    </form>
+</div>
+
+{% endblock %}
